@@ -2,8 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Khand' !important;
+    /* font-family: 'Khand' !important; */
 }
+
+.form-control {
+    height: 45px !important;
+}
+
+@media only screen and (max-width:991px) {
+    .product-first-div {
+        order: 2;
+    }
+
+    .product-second-div {
+        order: 1;
+    }
+}
+
+.form-iconsP {
+    position: absolute;
+    right: 36px;
+    top: 14px;
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 13px;
+    color: black !important;
+}
+
+.ourproduct-maincontainer {
+    width: 75%;
+    margin: 0 auto;
+    /* background-color: red; */
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+
+
+
+@media only screen and (max-width:1200px) {
+    .nav-custom {
+        width: 100%;
+    }
+}
+
+.nav-custom {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 56px;
+}
+
 
 body {
     overflow-x: hidden;
@@ -89,8 +145,8 @@ body {
     border-radius: 5px;
 
     padding: 10px;
-    background-color: #f9f9f9;
-    width: 60%;
+    /* background-color: #f9f9f9; */
+    width: 72%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -135,10 +191,10 @@ body {
 }
 
 .shopping-card-item-name img {
-    height: 80px;
+    height: 73px;
     margin-left: -160px;
     margin-top: -11px;
-
+    margin-right: 20px;
 }
 
 .shopping-card-quantity {
@@ -173,7 +229,7 @@ body {
     border-right: none;
     border-left: none;
     padding: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     width: 100%;
     display: flex;
     margin: 24px -11px 10px;
@@ -184,6 +240,7 @@ body {
 
 .shopping-inner-button {
     margin-left: 120px;
+
 
 }
 
@@ -211,7 +268,8 @@ body {
 }
 
 .shopping-inner-code {
-    color: gray
+    color: gray;
+    margin-left: 12px;
 }
 
 .shopping-inner-card-total {
@@ -259,7 +317,7 @@ hr.hr2 {
     border-right: none;
     border-left: none;
     padding: 10px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -334,11 +392,11 @@ hr.hr2 {
 }
 
 .opbox {
-    width: 38%;
+    width: 45%
 }
 
 .opbox1 {
-    width: 28%;
+    width: 40%
 }
 
 .opright-top {
@@ -365,6 +423,7 @@ hr.hr2 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 10px;
 }
 
 del {
@@ -397,6 +456,7 @@ del {
 
 .optitle {
     font-size: 24px;
+    margin-bottom: 10px;
     font-weight: 700;
     color: #002841;
 }
@@ -422,14 +482,20 @@ del {
 
 .product-categorycart {
     margin-bottom: 11px;
+    margin-top: 20px;
 }
 
 .opitem {
-    line-height: 50px;
+    line-height: 12px;
+    padding-bottom: 10px;
+    margin-bottom: -6px;
     border-bottom: 1px solid #E0E0E0;
     width: 250px;
+    font-size: 14px;
+    font-family: 'Quicksand';
     font-weight: 500;
     color: #002841;
+    cursor: pointer;
 }
 
 .item :last-child {
@@ -444,10 +510,14 @@ del {
 }
 
 .opicon {
-    height: 45px;
-    width: 45px;
-    margin-left: -25%;
+    height: 36%;
+    position: absolute;
+    right: 10px;
+    object-fit: contain;
+    /* margin-left: -30%; */
     padding: 5%;
+    top: 4px;
+
 }
 
 .header {
@@ -523,7 +593,7 @@ nav.navitemsConatiner a:active {
     background-color: #FCB23B;
     border: none;
     padding: 14px 16px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 11px;
     font-weight: 600;
     cursor: pointer;
@@ -565,15 +635,18 @@ nav.navitemsConatiner a:active {
     color: white;
     background-color: #FCB23B;
     border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 13px 23px;
+    border-radius: 21px;
     font-size: 1vw;
     font-weight: 600;
     cursor: pointer;
     position: absolute;
-    bottom: 15%;
+    bottom: 27%;
     /* height: 50px; */
-    left: 8%
+    left: 13%;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
 }
 
 .shop-btns:hover {
@@ -599,6 +672,7 @@ nav.navitemsConatiner a:active {
     /* position: relative; */
     flex-wrap: wrap;
     padding: 10px 10px;
+    margin-top: 50px
 }
 
 .card {
@@ -634,7 +708,7 @@ nav.navitemsConatiner a:active {
 
 .card-body-container-left {
     width: 60%;
-    line-height: 40px;
+    line-height: 0px;
 }
 
 .card-body-container-right {
@@ -658,12 +732,17 @@ nav.navitemsConatiner a:active {
 
 .card-body-container-left h2 {
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
+    font-family: 'Khand';
+    font-size: 37px;
+    line-height: 54px;
+
 }
 
 .card-body-container-left p {
     color: white;
     font-size: 16px;
+    font-family: 'Poppins'
 }
 
 .card-body-container-right button {
@@ -681,12 +760,15 @@ nav.navitemsConatiner a:active {
 .card-body-container-right h2 {
     color: white;
     font-weight: bolder;
+    font-family: 'Khand';
+    line-height: 35px;
+    margin-top: 17px;
 }
 
 .card-body-container-right p {
     color: white;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 18px;
 }
 
 .home-card-img-1 {
@@ -710,7 +792,7 @@ nav.navitemsConatiner a:active {
     /*height: auto; */
     position: absolute;
     left: -1px;
-    bottom: -5px;
+    bottom: -2px;
 }
 
 .hero-div {
@@ -728,31 +810,52 @@ nav.navitemsConatiner a:active {
 .hero-img {
     height: auto;
     width: auto;
-    max-width: 410px;
-    max-height: 410px;
+    max-width: 421px;
+    max-height: 459px;
     position: absolute;
     bottom: 0px;
-    right: 15%;
+    right: 16%;
 }
 
 
 .hero-txt-container h1 {
     position: absolute;
-    left: 8%;
-    bottom: 35%;
-    font-size: 5vw;
-    font-weight: 900;
+    left: 13%;
+    bottom: 38%;
+    font-size: 6vw;
+    font-family: "Khand";
+    font-weight: 700;
     color: white;
+    line-height: 64px;
 }
 
 .option-container-first {
     margin-bottom: 20px;
+    width: 200px;
+}
+
+@media only screen and (min-width:1460px) {
+    .hero-txt-container h1 {
+        position: absolute;
+        left: 13%;
+        bottom: 34%;
+        font-size: 5vw;
+        font-family: "Khand";
+        font-weight: 700;
+        color: white;
+        line-height: 100px;
+    }
 }
 
 @media only screen and (max-width:710px) {
     .food-guide-hero-txt {
         font-size: 12px;
         text-align: left !important;
+    }
+
+    .nav-custom {
+
+        margin-left: 0px;
     }
 
     .food-guide-hero-container {
@@ -796,6 +899,7 @@ nav.navitemsConatiner a:active {
         font-size: 6.5vw;
         font-weight: bolder;
         color: white;
+        line-height: 38px;
     }
 
 
@@ -816,15 +920,18 @@ nav.navitemsConatiner a:active {
         color: white;
         background-color: #FCB23B;
         border: none;
-        padding: 12px;
-        border-radius: 25px;
-        font-size: 2vw;
+        padding: 13px 23px;
+        border-radius: 21px;
+        font-size: 1vw;
         font-weight: 600;
         cursor: pointer;
         position: absolute;
-        bottom: 15%;
+        bottom: 27%;
         /* height: 50px; */
-        left: 8%
+        left: 8%;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 12px;
     }
 
     .hero-img {
@@ -877,15 +984,18 @@ nav.navitemsConatiner a:active {
         color: white;
         background-color: #FCB23B;
         border: none;
-        padding: 12px;
-        border-radius: 25px;
-        font-size: 2vw;
+        padding: 8px 18px;
+        border-radius: 21px;
+        font-size: 1vw;
         font-weight: 600;
         cursor: pointer;
         position: absolute;
-        bottom: 15%;
+        bottom: 27%;
         /* height: 50px; */
-        left: 8%
+        left: 8%;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 12px;
     }
 
     .hero-img {
@@ -905,6 +1015,7 @@ nav.navitemsConatiner a:active {
         font-size: 3vw;
         font-weight: bolder;
         color: white;
+        line-height: 34px;
     }
 }
 
@@ -989,18 +1100,19 @@ nav.navitemsConatiner a:active {
 }
 
 .options-container {
-    width: 70%;
+    width: 71%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: white;
+    /* margin-right: 162px; */
     font-weight: 500;
 }
 
 .footer-end {
     width: 100%;
     position: relative;
-    border-top: 0.5px solid lightgrey;
+    border-top: 0.01em solid grey;
     padding-top: 12px;
     padding-bottom: 12px;
     margin-top: 20px;
@@ -1018,8 +1130,9 @@ nav.navitemsConatiner a:active {
 .product-head-txt {
     color: #002841;
     text-align: center;
-    font-weight: bolder;
-    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Khand';
+    font-size: 70px;
     margin: 35px 0px 5px 0px;
 }
 
@@ -1027,7 +1140,7 @@ nav.navitemsConatiner a:active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -1035,6 +1148,8 @@ nav.navitemsConatiner a:active {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
     flex-wrap: wrap;
     /* width: 100%; */
     /* margin: 0 30px; */
@@ -1099,15 +1214,18 @@ nav.navitemsConatiner a:active {
     align-items: center;
     /* justify-content: center; */
     flex-direction: column;
-    padding-bottom: 5%;
+    height: 930px;
 }
 
 .hero-2 h1 {
     color: white;
     text-align: center;
     padding-top: 60px;
-    font-size: 3vw;
-    font-weight: bolder;
+    font-family: 'Khand';
+    margin-top: 50px;
+
+    font-size: 4.5vw;
+    font-weight: 700;
 }
 
 .main-hero {
@@ -1115,21 +1233,22 @@ nav.navitemsConatiner a:active {
     flex-direction: row;
     justify-content: space-around;
     max-width: 100%;
-    width: 55%;
+    width: 65%;
     margin-top: 50px;
 }
 
 .main-hero-img {
     width: 90%;
-    height: auto;
+    height: 62%;
     margin-top: 40px;
     object-fit: contain;
+    /* margin-top: -38px !important; */
 }
 
 .main-hero-left {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 900px;
 }
 
 .main-hero-left-img1 {
@@ -1143,12 +1262,14 @@ nav.navitemsConatiner a:active {
 .main-hero-left-txt {
     color: white;
     text-align: center;
-    font-size: 22px;
+    font-family: 'Khand';
+    font-size: 1.5vw;
     font-weight: 600;
+    line-height: 22px;
 }
 
 .main-hero-left-img2 {
-    width: 80px;
+    width: 100% !important;
     height: 20px;
     object-fit: contain;
     align-self: center;
@@ -1170,13 +1291,17 @@ nav.navitemsConatiner a:active {
     text-align: center;
     font-weight: bold;
     margin-top: 40px;
+    font-family: "Khand";
+    font-weight: 700;
+    font-size: 65px;
 }
 
 .check-instagram-container-images {
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
-    max-width: 100%;
+    width: 75%;
+    /* max-width: 100%; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1185,6 +1310,8 @@ nav.navitemsConatiner a:active {
 
 .check-instagram-container-images img {
     margin-bottom: 30px;
+    width: 240px;
+
 }
 
 .why-happy {
@@ -1192,33 +1319,47 @@ nav.navitemsConatiner a:active {
     flex-direction: row;
     width: 100%;
     background-color: #ECF3FF;
-    padding-top: 100px;
+    padding-top: 160px;
     padding-bottom: 400px;
+    z-index: -2;
+    position: relative;
 }
 
 .why-happy-left {
-    width: 50%;
-    margin-left: 50px;
-    margin-right: 150px;
+    width: 45%;
+    margin-left: 14%;
+    margin-right: 50px;
 }
 
 .why-happy-left-txt {
-    line-height: 35px;
+    line-height: 27px;
     margin-top: 30px;
+    font-family: 'QuickSand';
+    font-weight: 600;
+    font-size: 15px;
     margin-bottom: 30px;
-    text-align: justify;
+    width: 83%;
+    /* text-align: justify; */
 
 }
 
 .why-happy-right {
-    width: 50%;
+    width: 55%;
 
 }
 
 .why-happy-right img {
-    width: 100%;
-    height: 600px;
+    width: 650px;
+    height: 526px;
     object-fit: contain;
+    position: absolute;
+    right: 0px;
+}
+
+.why-happy-left h1 {
+    font-family: "Khand";
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .pup-hero {
@@ -1227,7 +1368,7 @@ nav.navitemsConatiner a:active {
 
 .pup-hero-card {
     background-color: #0766C6;
-    width: 90%;
+    width: 73%;
     border-radius: 20px;
     padding: 50px;
     margin: auto;
@@ -1238,44 +1379,59 @@ nav.navitemsConatiner a:active {
     margin-bottom: 360px;
     position: relative;
     bottom: 150px;
+    z-index: 100;
 
 }
 
 .pup-hero-card h2 {
     text-align: center;
     color: white;
+    font-family: "Khand";
+    font-weight: 700;
+    font-size: 45px;
 }
 
 .pup-hero-card img {
     /* width: 120px;
     height: 30px; */
+    width: 9%;
     object-fit: contain;
 }
 
 .pup-hero-card-txt {
     color: white;
-    text-align: justify;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 500;
+    font-size: 20px;
     margin-top: 30px;
     line-height: 30px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .pup-img {
     position: absolute;
-    /* width: 100% !important; */
-    top: -86%;
+    width: 32% !important;
+    bottom: 12%;
+    z-index: -1;
+    left: 32%;
 }
 
 .paw-big {
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 0%;
+    right: 0%;
+    width: 10% !important;
 
 }
 
 .paw-small {
     position: absolute;
-    bottom: 5%;
-    left: 10%;
+    bottom: 2%;
+    left: 0%;
+    width: 21% !important
 }
 
 .paw-vector {
@@ -1291,13 +1447,15 @@ nav.navitemsConatiner a:active {
     flex-direction: row;
     justify-content: space-between;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .nav-copy-container a {
     text-decoration: none;
-    color: #ECF3FF;
+    color: grey;
     font-size: 12px;
+    font-family: 'Quicksand';
+    font-weight: 700;
 }
 
 .nav-copy-container a:hover {
@@ -1305,21 +1463,38 @@ nav.navitemsConatiner a:active {
 }
 
 .options-container-div {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    font-family: 'Quicksand';
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .options-container-div-content {
-    font-size: 12px;
+    font-size: 13px;
     color: lightgrey;
+    font-family: 'Quicksand';
+    font-weight: 400;
+}
+
+.social-container {
+    width: 100%
 }
 
 .social-container i:hover {
     color: #f59804
 }
 
+.payment-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
 .social-container img {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
     filter: invert(100%) sepia(1%) saturate(4355%) hue-rotate(44deg) brightness(133%) contrast(92%);
 }
 
@@ -1354,8 +1529,11 @@ nav.navitemsConatiner a:active {
 
 
 .food-guide-hero-txt {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
+    font-family: 'Quicksand';
+    line-height: 15px;
+
 }
 
 .food-guide-hero-right {
@@ -1391,8 +1569,8 @@ nav.navitemsConatiner a:active {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     cursor: pointer;
 }
@@ -1415,15 +1593,16 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
     margin-bottom: 60px;
+    /* width: 53% !important; */
+
 }
 
 .food-guide-container-txt-container {
     font-size: 14px;
-    width: 60%;
+    width: 53%;
     margin: auto;
-    text-align: justify;
+    /* text-align: justify; */
     line-height: 25px;
     margin-bottom: 40px;
 }
@@ -1446,6 +1625,7 @@ li a:hover {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 30px;
+    margin-top: 100px;
     padding: 10px;
     background-color: white;
     border-bottom-left-radius: 25px;
@@ -1460,8 +1640,9 @@ li a:hover {
 }
 
 .ContactUs-first-conatiner-features-eachConatiner img {
-    width: 40px;
-    height: 40px;
+
+    width: 59px;
+    height: 59px;
     object-fit: contain;
     align-self: flex-start;
 }
@@ -1478,9 +1659,11 @@ li a:hover {
 
 .ContactUs-first-conatiner-form form {
     background-color: #F1F1F2;
-    padding: 15px 24px;
+    padding: 38px 24px;
     border-radius: 20px;
-    width: 395px;
+    /* width: 395px; */
+    width: 472px;
+    height: 494px;
 }
 
 .ContactUs-first-conatiner-form form input {
@@ -1578,7 +1761,9 @@ li a:hover {
 }
 
 .FAQ-container h3 {
-    font-weight: bolder;
+    font-weight: 700;
+    font-family: 'Khand';
+    font-size: 38px;
     margin-Left: 20px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -1608,10 +1793,15 @@ li a:hover {
     font-weight: 600;
 }
 
+.accordion-body {
+    font-family: 'Quicksand'
+}
+
 .accordion-item strong {
     color: black;
     font-weight: 600;
     font-size: 14px;
+    font-family: 'Quicksand'
 }
 
 .menu {
@@ -1680,24 +1870,35 @@ li a:hover {
 }
 
 .about-us-first-div-left {
-    width: 54%;
+    width: 50%;
     padding: 5%;
     line-height: 30px;
-    text-align: justify;
+    margin-left: 11%;
+}
+
+.about-us-first-div-left p {
+    font-family: 'Quicksand';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
 }
 
 .about-us-first-div-left h1 {
-    font-weight: bolder;
+    font-weight: 700;
+    font-family: "Khand";
+    font-size: 65px;
+    color: #002841;
 }
 
 .about-us-first-div-right {
-    width: 35%;
-
+    width: 50%;
+    right: 0px;
+    position: relative;
 }
 
 .about-us-first-div-right img {
     display: block;
-    width: 50%;
+    width: 100%;
     height: auto;
     object-fit: contain;
     position: absolute;
@@ -1706,13 +1907,14 @@ li a:hover {
 }
 
 .paw-break {
-    width: 27%;
+    width: 24 !important;
+    margin-top: -31px !important;
     object-fit: contain;
 }
 
 .arrow {
     position: absolute;
-    width: 13%;
+    width: 10%;
     object-fit: contain;
     bottom: 0%;
     z-index: 10;
@@ -1722,10 +1924,18 @@ li a:hover {
 
 .quto-txt {
     width: 100%;
-    font-weight: bolder;
+    font-weight: 700;
     text-align: center;
+    font-family: "Khand";
     padding: 10% 20%;
-    font-size: 1.7vw
+
+}
+
+.quto-txt h1 {
+    font-family: "Khand";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 .about-us-dogs-img-container {
@@ -1748,8 +1958,6 @@ li a:hover {
     font-family: 'Quicksand';
     border: 1px solid #E0E0E0;
     border-radius: 30px !important;
-    margin-top: 12px;
-    margin-bottom: 30px;
 }
 
 .checkoutform-btn {
@@ -1833,6 +2041,7 @@ td {
     border-radius: 30px !important;
     font-family: quicksand;
     padding: 12px;
+    margin-right: 10px;
 }
 
 .cart-btn:hover {
@@ -1840,13 +2049,22 @@ td {
 
 }
 
+.cart-cross {
+    cursor: pointer;
+
+}
+
+
+
 .cart-btn-text {
+    font-family: 'Quicksand' !important;
     line-height: 18px;
+    font-size: 14px;
+    font-weight: 700 !important;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     white-space: nowrap;
-    font-family: quicksand;
 }
 
 .checkout-place-order {
@@ -1885,34 +2103,45 @@ td {
 }
 
 .happy-treat-treat-section {
-    font-family: 'Khand';
+    font-family: 'Khand' !important;
     color: #002841;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 2px;
     font-style: normal;
-    font-size: 40px;
+    font-size: 36px;
 
 }
 
 .dark-dollar {
     color: #002841;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .light-dollar {
     color: #787878;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
+    margin-right: 12px;
     text-decoration-line: line-through;
 }
 
 .happy-treat-main-section {
     margin-top: 30px;
+    width: 89%;
+    margin: 0 auto;
 }
 
 .cart-text-paragraph {
     margin-top: 19px;
+    font-family: 'Quicksand' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .happy-treat-image-section {
@@ -1941,6 +2170,7 @@ td {
 .second-image {
     width: 131px !important;
     height: 174px !important;
+    object-fit: contain;
 }
 
 .third-image {
@@ -1976,8 +2206,7 @@ td {
 }
 
 .cart-topic {
-
-    font-family: 'Quicksand';
+    font-family: 'Quicksand' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1988,14 +2217,14 @@ td {
 
 }
 
-.product-categorycart {
-    margin-bottom: 11px;
-}
+
 
 .happytreat-item {
+    color: #002841 !important;
     line-height: 50px;
     border-bottom: 1px solid #E0E0E0;
     width: 250px;
+    font-family: 'Quicksand' !important;
 }
 
 .product-category-section .item-data:last-child {
@@ -2006,6 +2235,7 @@ td {
     background: #E6EFFF;
     border-top-right-radius: 30px 17px;
     border-top-left-radius: 30px 17px;
+    /* height: 240px; */
 }
 
 .button-section-cart {
@@ -2020,12 +2250,12 @@ td {
 }
 
 .card-body-container-right button {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     color: white;
     font-size: 12px;
     background-color: #0766c6;
-    padding: 0.1vw 1.5vw;
+    padding: 0px 25px;
     position: absolute;
     bottom: 20px;
     cursor: pointer;
@@ -2038,12 +2268,12 @@ td {
 
 
 .card-body-container-left button {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     color: white;
     font-size: 12px;
     background-color: #f5483e;
-    padding: 0.1vw 1.5vw;
+    padding: 20px 25px;
     position: absolute;
     bottom: 20px;
     cursor: pointer !important;
@@ -2065,27 +2295,88 @@ td {
 .ContactUs-first-conatiner-features-eachConatiner-right h6 {
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 24px;
+    font-family: 'Khand';
+    color: #002841;
 }
 
-.ContactUs-second-conatiner-features-eachConatiner-right h6 {
-    margin-bottom: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 15px;
-}
+
 
 .food-guide-hero-mid h1 {
-    font-size: 54px !important;
+    font-size: 75px;
+    font-family: 'Khand';
+    font-weight: 700;
+    margin-top: 20px;
+    /* margin-left: 52px; */
 }
 
 .hero-2 img {
     margin-top: 10px;
-    width: 47%;
+    width: 100%;
 }
 
 .card-body-home {
     padding: 10px;
+}
+
+@media only screen and (min-width: 1300px) {}
+
+@media only screen and (min-width: 1600px) {
+    .why-happy {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #ECF3FF;
+        padding-top: 160px;
+        padding-bottom: 700px;
+        z-index: -2;
+        position: relative;
+    }
+
+    .pup-img {
+        position: absolute;
+        width: 32% !important;
+        bottom: 8%;
+        z-index: -1;
+        left: 32%;
+    }
+
+    .main-hero-left-txt {
+        color: white;
+        text-align: center;
+        font-family: 'Khand';
+        font-size: 1.5vw;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    .hero-2 {
+        background-color: #0766C6;
+        height: auto;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+        height: 1130px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .pup-img {
+        position: absolute;
+        width: 32% !important;
+        bottom: 10%;
+        z-index: -1;
+        left: 32%;
+    }
+
+    .why-happy-right img {
+        position: absolute;
+        right: 0px;
+        width: 450px;
+        height: 526px;
+        object-fit: contain;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2131,10 +2422,22 @@ td {
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width:1400px) {
     .about-us-first-div-right img {
         display: block;
-        width: 34%;
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        position: absolute;
+        bottom: -35%;
+        right: 0px;
+    }
+}
+
+@media only screen and (min-width: 950px) and (max-width:1400px) {
+    .about-us-first-div-right img {
+        display: block;
+        width: 100%;
         height: auto;
         object-fit: contain;
         position: absolute;
@@ -2173,6 +2476,7 @@ td {
         height: 333px;
         border-radius: 30px;
         margin-left: 6%;
+        margin-top: 10%
     }
 
     .nav-copy-container {
@@ -2184,6 +2488,8 @@ td {
         text-align: center;
         color: white;
         font-size: 25px;
+        font-family: "Khand";
+        font-weight: 700;
     }
 
     .why-happy-right img {
@@ -2207,6 +2513,7 @@ td {
     .main-hero-left-txt {
         color: white;
         text-align: center;
+
         font-size: 2vw;
         font-weight: 600;
     }
@@ -2296,6 +2603,7 @@ td {
     .ContactUs-first-conatiner-features {
         display: flex;
         width: 100%;
+        /* margin-top: 100px; */
         flex-direction: column;
         justify-content: space-between;
         margin-bottom: 30px;
@@ -2349,7 +2657,9 @@ td {
 
     .ContactUs-seconde-conatiner-mdQ {
         align-self: center;
-        width: 70%;
+        /* width: 70%; */
+        width: 370px;
+        height: 477px;
 
 
     }
@@ -2363,12 +2673,12 @@ td {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
 
-    .opicon {
+    /* .opicon {
         display: none;
 
-    }
+    } */
 
     .card-text {
         font-size: 15px;
@@ -2387,10 +2697,11 @@ td {
         width: 98%;
     }
 
+    /* 
     .opicon {
         height: 38px;
         width: 38px;
-    }
+    } */
 
     .card-text {
         font-size: 14px;
@@ -2404,10 +2715,10 @@ td {
         /* font-size: 14px; */
     }
 
-    .opicon {
+    /* .opicon {
         height: 25px;
         width: 25px;
-    }
+    } */
 
     input::placeholder {
         font-size: 12px !important;
@@ -2437,10 +2748,10 @@ td {
         font-size: 10px !important;
     }
 
-    .opicon {
+    /* .opicon {
         height: 20px !important;
         width: 20px !important;
-    }
+    } */
 
     .opsubline {
         font-size: 10px;
@@ -2457,6 +2768,13 @@ td {
 
 }
 
+@media (max-width:820px) {
+    .cart-imgN {
+        display: none;
+    }
+}
+
+
 @media (max-width: 768px) {
     .shopping-card {
         width: 90%;
@@ -2467,6 +2785,7 @@ td {
     }
 
     .shopping-cart-item-name img {
+        display: none;
         height: 60px;
         margin-left: -28px;
         margin-top: -47px;
@@ -2511,6 +2830,7 @@ td {
         height: 50px;
         width: 50px;
         margin-left: -45%;
+        margin-right: 30px;
     }
 
     .shopping-card-item-name p {
@@ -2581,6 +2901,10 @@ td {
         display: none;
     }
 
+    .food-guide-hero-mid h1 {
+        font-size: 30px;
+    }
+
     .happy-treat-main-top-image {
         display: none;
     }
@@ -2620,7 +2944,7 @@ td {
     }
 
     .formbar {
-        width: 50% !important;
+        /* width: 50% !important; */
         height: 87px !important;
     }
 }
@@ -2628,6 +2952,10 @@ td {
 @media only screen and (max-width: 576px) {
     .happy-treat-main-top-image {
         display: none;
+    }
+
+    .food-guide-hero-mid h1 {
+        font-size: 30px;
     }
 
     .searchicon {
@@ -2668,8 +2996,9 @@ td {
             height: 41px;
           } */
     .formbar {
-        width: 50% !important;
-        height: 51px;
+        /* width: 50% !important;
+        height: 51px; */
+        margin-top: 20px;
     }
 
     .searchicon {
@@ -2689,6 +3018,10 @@ td {
 @media only screen and (max-width: 768px) {
     .searchicon {
         display: none;
+    }
+
+    .food-guide-hero-mid h1 {
+        font-size: 30px;
     }
 
     .happy-treat-main-top-image {
@@ -2712,7 +3045,7 @@ td {
 
     .formbar {
         /* width: 50% !important; */
-        height: 87px;
+        /* height: 87px; */
     }
 
     .card-title {
@@ -2742,18 +3075,26 @@ td {
         display: none;
     }
 
+    .food-guide-hero-mid h1 {
+        font-size: 40px;
+    }
+
     .formbar {
         /* width: 50%; */
     }
 
     .card-title {
-        font-size: 16px !important;
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .happy-treat-main-top-image {
         display: none;
+    }
+
+    .food-guide-hero-mid h1 {
+        font-size: 40px;
     }
 
     .searchicon {
@@ -2770,18 +3111,315 @@ td {
     .searchicon {
         display: none;
     }
+
+    .food-guide-hero-mid h1 {
+        font-size: 40px;
+    }
 }
 
 
 @media only screen and (max-width: 1308px) {
-
-
-
     .txt-offer {
         font-size: 22px !important;
     }
+}
 
+/* Chnages */
+/*Aashma Happy Treat Page added font+other changesss  */
+.product-image {
+    max-width: 104%;
+    height: auto;
+    width: 104%;
+}
+
+.product-image-thumbs {
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.product-image-thumb {
+    /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+    border-radius: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6; */
+    display: -ms-flexbox;
+    display: flex;
+    /* margin-right: 1rem; */
+    max-width: 7rem;
+    padding: 0.5rem;
+    width: 80px;
+    height: 76px;
 
 }
 
-/* After */
+.product-image-thumb img {
+    max-width: 100%;
+    height: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+.product-image-thumb:hover {
+    opacity: .5;
+    cursor: pointer
+}
+
+.happy-treat-card {
+    height: 405px !important;
+}
+
+.happy-treat-cardtitle {
+    font-family: 'Khand' !important;
+}
+
+.cart-text-paragraph-happy-treat {
+    font-family: 'Quicksand';
+}
+
+@media only screen and (min-width:1780px) {
+    .hero-2 img {
+        width: 55%;
+    }
+
+    .hero-2 {
+        height: 1300px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-expand-lg {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .happytreat-dollars {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .happytreat-dollars {
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 994px) {
+
+    /* your styles here */
+    .card-title {
+        font-size: 12px;
+    }
+
+    .cart-btn-text {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .cart-text-paragraph {
+        font-size: 14px;
+    }
+
+    .cart-topic {
+        font-size: 14px;
+    }
+
+    .happytreat-item {
+        font-size: 14px;
+    }
+
+    .light-dollar {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .dark-dollar {
+        font-size: 14px;
+    }
+
+    .happytreat-item {
+        width: 189px;
+    }
+
+    .happy-treat-treat-section {
+        font-size: 26px;
+    }
+
+    .button-section-cart {
+        margin-bottom: 12px;
+    }
+
+    .cart-text-paragraph-happy-treat {
+        white-space: nowrap;
+    }
+
+    .second-image {
+        width: 112px !important;
+        height: 174px !important;
+    }
+
+    .third-image {
+        width: 114px !important;
+        height: 174px !important;
+    }
+
+    .card-text {
+        display: grid;
+    }
+
+    .cart-btn-text {
+        font-size: 9px;
+    }
+}
+
+@media only screen and (min-width: 995px) and (max-width: 1199px) {
+
+    /* your styles here */
+    .card-title {
+        font-size: 18px;
+    }
+
+    .cart-btn-text {
+        font-size: 18px;
+        padding: 2px;
+    }
+
+    .cart-text-paragraph {
+        font-size: 16px;
+    }
+
+    .cart-topic {
+        font-size: 20px;
+    }
+
+    .happytreat-item {
+        font-size: 18px;
+    }
+
+    .light-dollar {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .dark-dollar {
+        font-size: 18px;
+    }
+
+    .happytreat-item {
+        width: 189px;
+    }
+
+    .happy-treat-treat-section {
+        font-size: 28px;
+    }
+
+    .button-section-cart {
+        margin-bottom: 18px;
+    }
+
+    .cart-text-paragraph-happy-treat {
+        white-space: nowrap;
+    }
+
+    .second-image {
+        width: 112px !important;
+        height: 174px !important;
+    }
+
+    .third-image {
+        width: 114px !important;
+        height: 174px !important;
+    }
+
+    .card-text {
+        display: grid;
+    }
+
+    .cart-btn-text {
+        font-size: 14px;
+    }
+}
+
+.checkout-form-heading {
+    font-family: khand;
+    font-weight: 700;
+    font-size: 90px !important;
+    line-height: 70px;
+}
+
+.houseno-checkoutform {
+    margin-bottom: 19px;
+}
+
+.table-checkoutformorder {
+    font-family: 'Quicksand' !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .checkout-order {
+        font-size: 22px;
+    }
+}
+
+/* shopping cart */
+.shopping-cart-treat-products {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    Size: 16px;
+    Line-height: 50px;
+}
+
+.shipping {
+    color: #002841 !important;
+}
+
+.shopping-cart-table-head {
+    color: #002841 !important;
+}
+
+/* contact us form */
+.contact-us-weekdays {
+    font-family: 'Quicksand' !important;
+    color: #002841 !important;
+}
+
+.contact-usformplaceholder::placeholder {
+    color: #002841 !important;
+}
+
+.contactus-leftaddresssection {
+    font-family: 'Khand' !important;
+    font-size: 24px;
+    font-weight: 700;
+    color: #002841 !important;
+}
+
+.card-text {
+    white-space: nowrap;
+}
+
+.cart-text-paragraph-happy-treat {
+    color: #002841 !important;
+
+}
+
+.cart-topic {
+    color: #002841 !important;
+}
+
+/* header-navlink */
+.food-guide-hero-txt a {
+    color: white;
+    font-size: 14px;
+
+}
+
+.food-guide-hero-txt a:hover {
+    color: rgb(211, 166, 166);
+    /* Change the text color to red */
+    text-decoration: underline;
+    /* Add an underline */
+}
